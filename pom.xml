@@ -13,6 +13,10 @@
       <id>repo.jenkins-ci.org</id>
       <url>http://repo.jenkins-ci.org/public/</url>
     </repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
   </repositories>
 
   <pluginRepositories>
@@ -86,10 +90,15 @@
       <type>jar</type>
     </dependency>
     <dependency>
+      <groupId>com.github.fusesource</groupId>
+      <artifactId>jansi</artifactId>
+      <version>master</version>
+    </dependency>
+    <!-- <dependency>
       <groupId>org.fusesource.jansi</groupId>
       <artifactId>jansi</artifactId>
-      <version>1.12</version>
-    </dependency>
+      <version>1.15</version>
+    </dependency> -->
     <dependency>
      <groupId>org.jenkins-ci.plugins.workflow</groupId>
      <artifactId>workflow-step-api</artifactId>
@@ -113,4 +122,3 @@
   </developers>
 
 </project>
-
